@@ -1,9 +1,12 @@
 #calculadora
-num1 = int(input('Digite o primeiro número: '))
-num2 = int(input('Digite o segundo número: '))
-operador = (input('Digite o operador: '))
 
-match operador:
+# Receive two input from the user as numbers and one input as an operator
+num1 = int(input('type the first number: '))
+num2 = int(input('type the second number: '))
+operator = (input('type the operator: '))
+
+# Perform the operation based on the operator input
+match operator:
     case '+':
         res = num1 + num2
     case '-':
@@ -12,8 +15,9 @@ match operador:
         res = num1 * num2
     case '/':
         if num2 == 0:
-            res = 'Divisão por zero'
+            res = 'Division by zero'
         else:
             res = num1 / num2
 
-print(f'O resultado é {res}')
+# Print the result
+print(f'The final result is: {res}')
