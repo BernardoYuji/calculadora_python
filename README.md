@@ -1,0 +1,1 @@
+A basic calculator using Python, I only did that because I wanted to see if my programming logic is going to the right way.
